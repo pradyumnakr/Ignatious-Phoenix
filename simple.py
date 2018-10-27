@@ -25,7 +25,7 @@ def login():
 def weather_info():
     city_input = request.form["weather"]
     # Setup OpenWeatherMap API
-    api_key = '3ad42b95721c61094d1dff3f1fe8ba1d'    
+    api_key = #api key here   
     celsius = 'metric'
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city_input}&units={celsius}&APPID={api_key}'
     response = requests.get(url).json()    
